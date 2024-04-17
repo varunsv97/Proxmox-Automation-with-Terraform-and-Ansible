@@ -1,0 +1,73 @@
+---
+- name: Setup VM for DeepLabCut GUI
+  hosts: all 
+  become: yes
+  vars:
+    dockerfile_path: "~/proxmox-automation/ansible/files/Dockerfile"
+    docker_image_name: dlc-cuda
+  tasks:
+    - name: Update apt cache and install Docker dependencies
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - apt-transport-https
+        - ca-certificates
+        - curl
+        - gnupg
+        - software-properties-common
+
+
+    - name: Remove conflicting package containerd
+      apt:
+        name: containerd
+        state: absent
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+
+
+    - name: Install Docker prerequisites and X11 libraries
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - docker.io
+        - x11-apps
+        - libgl1-mesa-glx
+        - libsm6
+        - libxrender1
+        - libfontconfig1
+        - xterm
+        - x11-xserver-utils
+
+    - name: Create directory for Dockerfile on VM
+      file:
+        path: "/home/ubuntu/dockerfiles"
+        state: directory
+
+    - name: Copy Dockerfile to VM
+      copy:
+        src: "{{ dockerfile_path }}"
+        dest: "/home/ubuntu/dockerfiles/Dockerfile"
+
+    - name: Restart Docker service
+      service:
+        name: docker
+        state: restarted
+
+
+
+
+    - name: Build Docker image
+      command: "docker build -t {{ docker_image_name }} /home/ubuntu/dockerfiles"
+      args:
+        chdir: "/home/ubuntu/dockerfiles"
+
+    - name: Run Docker container with DeepLabCut GUI
+      command: "docker run -it --rm --gpus all -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix {{ docker_image_name }}"
+
+    - name: Execute python -m deeplabcut inside Dockeri

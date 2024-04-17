@@ -1,0 +1,45 @@
+---
+- name: Pull Docker image and run container
+  hosts: all
+  become: yes
+  gather_facts: no
+
+  tasks:
+    - name: Pull cuda docker image nvidia/cuda:12.4.0-base-ubuntu22.04
+      docker_image:
+        name: nvidia/cuda:12.4.0-base-ubuntu22.04
+        source: pull
+
+    - name: Run Docker container with DeepLabCut GUI
+      command: "docker run -it --rm --name DLCcontainer --gpus all -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix nvidia/cuda:12.4.0-base-ubuntu22.04"
+
+    - name: Ensure the container is present
+      community.docker.docker_container:
+        name: DLCcontainer
+        image: nvidia/cuda:12.4.0-base-ubuntu22.04
+        state: started
+
+
+    - name: Run commands inside Docker container
+      community.docker.docker_container_exec:
+        container: DLCcontainer
+        command: "{{ item }}"
+        loop:
+          - apt-get update
+          - apt-get install -y git wget
+          - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda-installer.sh
+          - bash /opt/miniconda-installer.sh -b -p /root/miniconda3
+          - export PATH="/root/miniconda3/bin:$PATH"
+          - source ~/.bashrc
+          - conda init
+          - dpkg -i cuda-keyring_1.1-1_all.deb
+          - apt-get update
+          - apt-get install -y cuda-toolkit-12-4
+          - git clone https://github.com/DeepLabCut/DeepLabCut.git
+          - conda env create -f DeepLabCut/conda-environments/DEEPLABCUT.yaml
+          - conda activate DEEPLABCUT
+          - conda install -y anaconda::tensorflow-gpu
+          - conda install -y anaconda::numpy=1.23.5
+          - conda install -y chardet
+        loop_control:
+          loop_var: item

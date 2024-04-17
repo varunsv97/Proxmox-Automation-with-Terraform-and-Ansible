@@ -1,0 +1,1244 @@
+2024-03-07T11:39:51.614+0100 [INFO]  Terraform version: 1.6.6
+2024-03-07T11:39:51.614+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.36.0
+2024-03-07T11:39:51.614+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.19.1
+2024-03-07T11:39:51.614+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2024-03-07T11:39:51.614+0100 [DEBUG] using github.com/zclconf/go-cty v1.14.1
+2024-03-07T11:39:51.614+0100 [INFO]  Go runtime version: go1.21.5
+2024-03-07T11:39:51.614+0100 [INFO]  CLI args: []string{"terraform", "init"}
+2024-03-07T11:39:51.614+0100 [TRACE] Stdout is a terminal of width 157
+2024-03-07T11:39:51.614+0100 [TRACE] Stderr is a terminal of width 157
+2024-03-07T11:39:51.614+0100 [TRACE] Stdin is a terminal
+2024-03-07T11:39:51.614+0100 [DEBUG] Attempting to open CLI config file: /home/hiwiadmin/.terraformrc
+2024-03-07T11:39:51.614+0100 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-03-07T11:39:51.614+0100 [INFO]  Loading CLI configuration from /home/hiwiadmin/.terraform.d/credentials.tfrc.json
+2024-03-07T11:39:51.614+0100 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-03-07T11:39:51.614+0100 [DEBUG] ignoring non-existing provider search directory /home/hiwiadmin/.terraform.d/plugins
+2024-03-07T11:39:51.614+0100 [DEBUG] ignoring non-existing provider search directory /home/hiwiadmin/.local/share/terraform/plugins
+2024-03-07T11:39:51.614+0100 [DEBUG] ignoring non-existing provider search directory /usr/share/gnome/terraform/plugins
+2024-03-07T11:39:51.614+0100 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2024-03-07T11:39:51.614+0100 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2024-03-07T11:39:51.614+0100 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2024-03-07T11:39:51.614+0100 [INFO]  CLI command args: []string{"init"}
+2024-03-07T11:39:51.615+0100 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2024-03-07T11:39:51.615+0100 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2024-03-07T11:39:51.616+0100 [DEBUG] New state was assigned lineage "4ec06055-e105-b43d-414b-8e766c882084"
+2024-03-07T11:39:51.616+0100 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2024-03-07T11:39:51.616+0100 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2024-03-07T11:39:51.616+0100 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2024-03-07T11:39:51.616+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/bpg/proxmox v0.48.0 for linux_amd64 at .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.0/linux_amd64
+2024-03-07T11:39:51.616+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/bpg/proxmox v0.48.1 for linux_amd64 at .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.1/linux_amd64
+2024-03-07T11:39:51.616+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.6.6 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.6.6/linux_amd64
+2024-03-07T11:39:51.616+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.7.0 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.7.0/linux_amd64
+2024-03-07T11:39:51.616+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.8.0 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.8.0/linux_amd64
+2024-03-07T11:39:51.616+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.9.11 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.11/linux_amd64
+2024-03-07T11:39:51.616+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.9.3 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.3/linux_amd64
+2024-03-07T11:39:51.616+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v3.0.1-rc1 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64
+2024-03-07T11:39:51.616+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.6.6/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.6.6
+2024-03-07T11:39:51.616+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.7.0/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.7.0
+2024-03-07T11:39:51.616+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.8.0/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.8.0
+2024-03-07T11:39:51.616+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.3/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.9.3
+2024-03-07T11:39:51.616+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.11/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.9.11
+2024-03-07T11:39:51.616+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 3.0.1-rc1
+2024-03-07T11:39:51.616+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.0/linux_amd64 as a candidate package for registry.terraform.io/bpg/proxmox 0.48.0
+2024-03-07T11:39:51.616+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.1/linux_amd64 as a candidate package for registry.terraform.io/bpg/proxmox 0.48.1
+2024-03-07T11:39:51.652+0100 [DEBUG] checking for provisioner in "."
+2024-03-07T11:39:51.655+0100 [DEBUG] checking for provisioner in "/usr/bin"
+2024-03-07T11:39:51.656+0100 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2024-03-07T11:39:51.656+0100 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2024-03-07T11:39:51.656+0100 [TRACE] statemgr.Filesystem: reading initial snapshot from terraform.tfstate
+2024-03-07T11:39:51.656+0100 [TRACE] statemgr.Filesystem: read snapshot with lineage "8efea4b0-a90d-f6db-3b09-22509d510c14" serial 58
+2024-03-07T11:39:51.656+0100 [DEBUG] Service discovery for registry.terraform.io at https://registry.terraform.io/.well-known/terraform.json
+2024-03-07T11:39:51.656+0100 [TRACE] HTTP client GET request to https://registry.terraform.io/.well-known/terraform.json
+2024-03-07T11:39:51.714+0100 [DEBUG] GET https://registry.terraform.io/v1/providers/telmate/proxmox/versions
+2024-03-07T11:39:51.714+0100 [TRACE] HTTP client GET request to https://registry.terraform.io/v1/providers/telmate/proxmox/versions
+2024-03-07T11:39:51.742+0100 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2024-03-07T11:39:51.742+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/bpg/proxmox v0.48.0 for linux_amd64 at .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.0/linux_amd64
+2024-03-07T11:39:51.742+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/bpg/proxmox v0.48.1 for linux_amd64 at .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.1/linux_amd64
+2024-03-07T11:39:51.742+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.6.6 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.6.6/linux_amd64
+2024-03-07T11:39:51.742+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.7.0 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.7.0/linux_amd64
+2024-03-07T11:39:51.742+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.8.0 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.8.0/linux_amd64
+2024-03-07T11:39:51.742+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.9.11 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.11/linux_amd64
+2024-03-07T11:39:51.742+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.9.3 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.3/linux_amd64
+2024-03-07T11:39:51.742+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v3.0.1-rc1 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64
+2024-03-07T11:39:51.742+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.0/linux_amd64 as a candidate package for registry.terraform.io/bpg/proxmox 0.48.0
+2024-03-07T11:39:51.742+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.1/linux_amd64 as a candidate package for registry.terraform.io/bpg/proxmox 0.48.1
+2024-03-07T11:39:51.742+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.6.6/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.6.6
+2024-03-07T11:39:51.742+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.7.0/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.7.0
+2024-03-07T11:39:51.742+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.8.0/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.8.0
+2024-03-07T11:39:51.742+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.3/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.9.3
+2024-03-07T11:39:51.742+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.11/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.9.11
+2024-03-07T11:39:51.742+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 3.0.1-rc1
+2024-03-07T11:39:57.629+0100 [INFO]  Terraform version: 1.6.6
+2024-03-07T11:39:57.629+0100 [DEBUG] using github.com/hashicorp/go-tfe v1.36.0
+2024-03-07T11:39:57.629+0100 [DEBUG] using github.com/hashicorp/hcl/v2 v2.19.1
+2024-03-07T11:39:57.629+0100 [DEBUG] using github.com/hashicorp/terraform-svchost v0.1.1
+2024-03-07T11:39:57.629+0100 [DEBUG] using github.com/zclconf/go-cty v1.14.1
+2024-03-07T11:39:57.629+0100 [INFO]  Go runtime version: go1.21.5
+2024-03-07T11:39:57.629+0100 [INFO]  CLI args: []string{"terraform", "plan"}
+2024-03-07T11:39:57.629+0100 [TRACE] Stdout is a terminal of width 157
+2024-03-07T11:39:57.629+0100 [TRACE] Stderr is a terminal of width 157
+2024-03-07T11:39:57.629+0100 [TRACE] Stdin is a terminal
+2024-03-07T11:39:57.629+0100 [DEBUG] Attempting to open CLI config file: /home/hiwiadmin/.terraformrc
+2024-03-07T11:39:57.629+0100 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2024-03-07T11:39:57.629+0100 [INFO]  Loading CLI configuration from /home/hiwiadmin/.terraform.d/credentials.tfrc.json
+2024-03-07T11:39:57.630+0100 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2024-03-07T11:39:57.630+0100 [DEBUG] ignoring non-existing provider search directory /home/hiwiadmin/.terraform.d/plugins
+2024-03-07T11:39:57.630+0100 [DEBUG] ignoring non-existing provider search directory /home/hiwiadmin/.local/share/terraform/plugins
+2024-03-07T11:39:57.630+0100 [DEBUG] ignoring non-existing provider search directory /usr/share/gnome/terraform/plugins
+2024-03-07T11:39:57.630+0100 [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2024-03-07T11:39:57.630+0100 [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2024-03-07T11:39:57.630+0100 [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2024-03-07T11:39:57.630+0100 [INFO]  CLI command args: []string{"plan"}
+2024-03-07T11:39:57.632+0100 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2024-03-07T11:39:57.632+0100 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2024-03-07T11:39:57.632+0100 [DEBUG] New state was assigned lineage "8687c38d-4af7-68e4-7a6e-34d46dfcfbe7"
+2024-03-07T11:39:57.632+0100 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2024-03-07T11:39:57.632+0100 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2024-03-07T11:39:57.632+0100 [TRACE] providercache.fillMetaCache: scanning directory .terraform/providers
+2024-03-07T11:39:57.632+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/bpg/proxmox v0.48.0 for linux_amd64 at .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.0/linux_amd64
+2024-03-07T11:39:57.632+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/bpg/proxmox v0.48.1 for linux_amd64 at .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.1/linux_amd64
+2024-03-07T11:39:57.632+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.6.6 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.6.6/linux_amd64
+2024-03-07T11:39:57.632+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.7.0 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.7.0/linux_amd64
+2024-03-07T11:39:57.632+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.8.0 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.8.0/linux_amd64
+2024-03-07T11:39:57.632+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.9.11 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.11/linux_amd64
+2024-03-07T11:39:57.632+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v2.9.3 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.3/linux_amd64
+2024-03-07T11:39:57.632+0100 [TRACE] getproviders.SearchLocalDirectory: found registry.terraform.io/telmate/proxmox v3.0.1-rc1 for linux_amd64 at .terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64
+2024-03-07T11:39:57.632+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.0/linux_amd64 as a candidate package for registry.terraform.io/bpg/proxmox 0.48.0
+2024-03-07T11:39:57.632+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/bpg/proxmox/0.48.1/linux_amd64 as a candidate package for registry.terraform.io/bpg/proxmox 0.48.1
+2024-03-07T11:39:57.632+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.6.6/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.6.6
+2024-03-07T11:39:57.632+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.7.0/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.7.0
+2024-03-07T11:39:57.632+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.8.0/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.8.0
+2024-03-07T11:39:57.632+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.3/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.9.3
+2024-03-07T11:39:57.632+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/2.9.11/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 2.9.11
+2024-03-07T11:39:57.632+0100 [TRACE] providercache.fillMetaCache: including .terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64 as a candidate package for registry.terraform.io/telmate/proxmox 3.0.1-rc1
+2024-03-07T11:39:57.668+0100 [DEBUG] checking for provisioner in "."
+2024-03-07T11:39:57.671+0100 [DEBUG] checking for provisioner in "/usr/bin"
+2024-03-07T11:39:57.671+0100 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2024-03-07T11:39:57.671+0100 [INFO]  backend/local: starting Plan operation
+2024-03-07T11:39:57.671+0100 [TRACE] backend/local: requesting state manager for workspace "default"
+2024-03-07T11:39:57.671+0100 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2024-03-07T11:39:57.671+0100 [TRACE] backend/local: requesting state lock for workspace "default"
+2024-03-07T11:39:57.671+0100 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2024-03-07T11:39:57.672+0100 [TRACE] statemgr.Filesystem: existing snapshot has lineage "8efea4b0-a90d-f6db-3b09-22509d510c14" serial 58
+2024-03-07T11:39:57.672+0100 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2024-03-07T11:39:57.672+0100 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2024-03-07T11:39:57.672+0100 [TRACE] backend/local: reading remote state for workspace "default"
+2024-03-07T11:39:57.672+0100 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2024-03-07T11:39:57.672+0100 [TRACE] statemgr.Filesystem: read snapshot with lineage "8efea4b0-a90d-f6db-3b09-22509d510c14" serial 58
+2024-03-07T11:39:57.672+0100 [TRACE] backend/local: populating backend.LocalRun for current working directory
+2024-03-07T11:39:57.672+0100 [TRACE] Config.VerifyDependencySelections: provider registry.terraform.io/telmate/proxmox has 3.0.1-rc1 to satisfy "3.0.1-rc1"
+2024-03-07T11:39:57.672+0100 [TRACE] terraform.NewContext: starting
+2024-03-07T11:39:57.672+0100 [TRACE] terraform.NewContext: complete
+2024-03-07T11:39:57.672+0100 [TRACE] backend/local: requesting interactive input, if necessary
+2024-03-07T11:39:57.672+0100 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/telmate/proxmox"
+2024-03-07T11:39:57.672+0100 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/telmate/proxmox" to read its schema
+2024-03-07T11:39:57.672+0100 [DEBUG] created provider logger: level=trace
+2024-03-07T11:39:57.672+0100 [INFO]  provider: configuring client automatic mTLS
+2024-03-07T11:39:57.681+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1 args=[".terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1"]
+2024-03-07T11:39:57.682+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1 pid=12958
+2024-03-07T11:39:57.682+0100 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1
+2024-03-07T11:39:57.685+0100 [INFO]  provider.terraform-provider-proxmox_v3.0.1-rc1: configuring server automatic mTLS: timestamp="2024-03-07T11:39:57.685+0100"
+2024-03-07T11:39:57.702+0100 [DEBUG] provider.terraform-provider-proxmox_v3.0.1-rc1: plugin address: address=/tmp/plugin89068043 network=unix timestamp="2024-03-07T11:39:57.702+0100"
+2024-03-07T11:39:57.702+0100 [DEBUG] provider: using plugin: version=5
+2024-03-07T11:39:57.711+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.711+0100 [TRACE] provider.stdio: waiting for stdio data
+2024-03-07T11:39:57.711+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received request: tf_proto_version=5.4 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:531 @module=sdk.proto tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f tf_rpc=GetProviderSchema timestamp="2024-03-07T11:39:57.711+0100"
+2024-03-07T11:39:57.711+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Sending request downstream: @module=sdk.proto tf_proto_version=5.4 tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:20 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_rpc=GetProviderSchema timestamp="2024-03-07T11:39:57.711+0100"
+2024-03-07T11:39:57.711+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Getting provider schema: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:106 @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f tf_rpc=GetProviderSchema timestamp="2024-03-07T11:39:57.711+0100"
+2024-03-07T11:39:57.711+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Found resource type: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:124 @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f tf_resource_type=proxmox_storage_iso tf_rpc=GetProviderSchema timestamp="2024-03-07T11:39:57.711+0100"
+2024-03-07T11:39:57.711+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Found resource type: tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f tf_rpc=GetProviderSchema @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_resource_type=proxmox_vm_qemu @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:124 timestamp="2024-03-07T11:39:57.711+0100"
+2024-03-07T11:39:57.713+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Found resource type: @module=sdk.helper_schema tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f tf_provider_addr=registry.terraform.io/telmate/proxmox tf_resource_type=proxmox_lxc tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:124 timestamp="2024-03-07T11:39:57.713+0100"
+2024-03-07T11:39:57.713+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Found resource type: tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f tf_resource_type=proxmox_lxc_disk @module=sdk.helper_schema tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:124 timestamp="2024-03-07T11:39:57.713+0100"
+2024-03-07T11:39:57.713+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Found resource type: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:124 @module=sdk.helper_schema tf_resource_type=proxmox_pool tf_rpc=GetProviderSchema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f timestamp="2024-03-07T11:39:57.713+0100"
+2024-03-07T11:39:57.713+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Found resource type: tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:124 tf_resource_type=proxmox_cloud_init_disk @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f timestamp="2024-03-07T11:39:57.713+0100"
+2024-03-07T11:39:57.713+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Found data source type: @module=sdk.helper_schema tf_data_source_type=proxmox_ha_groups tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:133 timestamp="2024-03-07T11:39:57.713+0100"
+2024-03-07T11:39:57.713+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received downstream response: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:40 diagnostic_error_count=0 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_rpc=GetProviderSchema @module=sdk.proto diagnostic_warning_count=0 tf_proto_version=5.4 tf_req_duration_ms=1 tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f timestamp="2024-03-07T11:39:57.713+0100"
+2024-03-07T11:39:57.713+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Announced server capabilities: @module=sdk.proto tf_proto_version=5.4 tf_rpc=GetProviderSchema @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/server_capabilities.go:25 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f tf_server_capability_get_provider_schema_optional=true tf_server_capability_plan_destroy=false timestamp="2024-03-07T11:39:57.713+0100"
+2024-03-07T11:39:57.715+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Served request: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:551 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=b84a9342-1bd3-7a43-24e6-cdcc6ae96e3f tf_rpc=GetProviderSchema @module=sdk.proto tf_proto_version=5.4 timestamp="2024-03-07T11:39:57.714+0100"
+2024-03-07T11:39:57.723+0100 [TRACE] GRPCProvider: Close
+2024-03-07T11:39:57.724+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-03-07T11:39:57.725+0100 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1 pid=12958
+2024-03-07T11:39:57.725+0100 [DEBUG] provider: plugin exited
+2024-03-07T11:39:57.725+0100 [TRACE] LoadSchemas: retrieving schema for provisioner "remote-exec"
+2024-03-07T11:39:57.725+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "remote-exec" to read its schema
+2024-03-07T11:39:57.725+0100 [TRACE] LoadSchemas: retrieving schema for provisioner "local-exec"
+2024-03-07T11:39:57.725+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.725+0100 [TRACE] Context.Input: Prompting for provider arguments
+2024-03-07T11:39:57.725+0100 [TRACE] Context.Input: Provider provider.proxmox declared at main.tf:1,1-19
+2024-03-07T11:39:57.725+0100 [TRACE] Context.Input: Input for provider.proxmox: map[string]cty.Value{}
+2024-03-07T11:39:57.725+0100 [TRACE] backend/local: running validation operation
+2024-03-07T11:39:57.725+0100 [DEBUG] Building and walking validate graph
+2024-03-07T11:39:57.725+0100 [TRACE] building graph for walkValidate
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] ConfigTransformer: Starting for path:
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+  ------
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.LocalTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.OutputTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.checkTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.StateTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] StateTransformer: pointless no-op call, creating no nodes at all
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] AttachResourceConfigTransformer: attaching to "proxmox_vm_qemu.prox-vm" (*terraform.NodeValidatableResource) config from main.tf:13,1-37
+2024-03-07T11:39:57.725+0100 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to proxmox_vm_qemu.prox-vm
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2024-03-07T11:39:57.725+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/telmate/proxmox\"]" provider configuration from main.tf:1,1-19
+2024-03-07T11:39:57.725+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.725+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/telmate/proxmox"] serving proxmox_vm_qemu.prox-vm
+2024-03-07T11:39:57.725+0100 [DEBUG] ProviderTransformer: "proxmox_vm_qemu.prox-vm" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.725+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.725+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/telmate/proxmox" to read its schema
+2024-03-07T11:39:57.725+0100 [TRACE] AttachSchemaTransformer: attaching resource schema to proxmox_vm_qemu.prox-vm
+2024-03-07T11:39:57.725+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "remote-exec" to read its schema
+2024-03-07T11:39:57.725+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "remote-exec" config schema to proxmox_vm_qemu.prox-vm
+2024-03-07T11:39:57.725+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.725+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to proxmox_vm_qemu.prox-vm
+2024-03-07T11:39:57.725+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.725+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to proxmox_vm_qemu.prox-vm
+2024-03-07T11:39:57.725+0100 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/telmate/proxmox" to read its schema
+2024-03-07T11:39:57.725+0100 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2024-03-07T11:39:57.725+0100 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2024-03-07T11:39:57.725+0100 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2024-03-07T11:39:57.725+0100 [DEBUG] ReferenceTransformer: "var.rootfs_size" references: []
+2024-03-07T11:39:57.725+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/telmate/proxmox\"]" references: [var.proxmox_host var.proxmox_host var.proxmox_host]
+2024-03-07T11:39:57.728+0100 [DEBUG] ReferenceTransformer: "proxmox_vm_qemu.prox-vm" references: [var.hostnames var.hostnames var.ips var.ips var.vmid var.proxmox_host var.user var.ips var.ssh_keys var.user var.ssh_keys var.ips var.user var.ssh_keys var.ips]
+2024-03-07T11:39:57.728+0100 [DEBUG] ReferenceTransformer: "var.user" references: []
+2024-03-07T11:39:57.728+0100 [DEBUG] ReferenceTransformer: "var.vmid" references: []
+2024-03-07T11:39:57.728+0100 [DEBUG] ReferenceTransformer: "var.hostnames" references: []
+2024-03-07T11:39:57.728+0100 [DEBUG] ReferenceTransformer: "var.ips" references: []
+2024-03-07T11:39:57.728+0100 [DEBUG] ReferenceTransformer: "var.ssh_keys" references: []
+2024-03-07T11:39:57.728+0100 [DEBUG] ReferenceTransformer: "var.proxmox_host" references: []
+2024-03-07T11:39:57.728+0100 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.728+0100 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2024-03-07T11:39:57.728+0100 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2024-03-07T11:39:57.728+0100 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2024-03-07T11:39:57.728+0100 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2024-03-07T11:39:57.728+0100 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2024-03-07T11:39:57.728+0100 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2024-03-07T11:39:57.728+0100 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2024-03-07T11:39:57.728+0100 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2024-03-07T11:39:57.728+0100 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2024-03-07T11:39:57.728+0100 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2024-03-07T11:39:57.728+0100 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2024-03-07T11:39:57.728+0100 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2024-03-07T11:39:57.728+0100 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2024-03-07T11:39:57.728+0100 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+  proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.728+0100 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2024-03-07T11:39:57.728+0100 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+  proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    var.rootfs_size - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.728+0100 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2024-03-07T11:39:57.728+0100 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+  proxmox_vm_qemu.prox-vm - *terraform.NodeValidatableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    var.rootfs_size - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.728+0100 [DEBUG] Starting graph walk: walkValidate
+2024-03-07T11:39:57.728+0100 [TRACE] vertex "var.ssh_keys": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.728+0100 [TRACE] NodeRootVariable: evaluating var.ssh_keys
+2024-03-07T11:39:57.728+0100 [TRACE] prepareFinalInputVariableValue: preparing var.ssh_keys
+2024-03-07T11:39:57.728+0100 [TRACE] prepareFinalInputVariableValue: var.ssh_keys has a default value
+2024-03-07T11:39:57.728+0100 [TRACE] vertex "var.user": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.728+0100 [TRACE] NodeRootVariable: evaluating var.user
+2024-03-07T11:39:57.728+0100 [TRACE] prepareFinalInputVariableValue: preparing var.user
+2024-03-07T11:39:57.728+0100 [TRACE] prepareFinalInputVariableValue: var.user has a default value
+2024-03-07T11:39:57.728+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.ssh_keys
+2024-03-07T11:39:57.728+0100 [TRACE] evalVariableValidations: no validation rules declared for var.ssh_keys, so skipping
+2024-03-07T11:39:57.728+0100 [TRACE] vertex "var.ssh_keys": visit complete
+2024-03-07T11:39:57.728+0100 [TRACE] vertex "var.proxmox_host": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.728+0100 [TRACE] NodeRootVariable: evaluating var.proxmox_host
+2024-03-07T11:39:57.728+0100 [TRACE] prepareFinalInputVariableValue: preparing var.proxmox_host
+2024-03-07T11:39:57.728+0100 [TRACE] prepareFinalInputVariableValue: var.proxmox_host has a default value
+2024-03-07T11:39:57.728+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.user
+2024-03-07T11:39:57.729+0100 [TRACE] evalVariableValidations: no validation rules declared for var.user, so skipping
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "var.user": visit complete
+2024-03-07T11:39:57.729+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.proxmox_host
+2024-03-07T11:39:57.729+0100 [TRACE] evalVariableValidations: no validation rules declared for var.proxmox_host, so skipping
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "var.proxmox_host": visit complete
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "var.ips": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "provider[\"registry.terraform.io/telmate/proxmox\"]": starting visit (*terraform.NodeApplyableProvider)
+2024-03-07T11:39:57.729+0100 [TRACE] NodeRootVariable: evaluating var.ips
+2024-03-07T11:39:57.729+0100 [TRACE] prepareFinalInputVariableValue: preparing var.ips
+2024-03-07T11:39:57.729+0100 [TRACE] prepareFinalInputVariableValue: var.ips has a default value
+2024-03-07T11:39:57.729+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.ips
+2024-03-07T11:39:57.729+0100 [TRACE] evalVariableValidations: no validation rules declared for var.ips, so skipping
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "var.ips": visit complete
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "var.rootfs_size": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.729+0100 [TRACE] NodeRootVariable: evaluating var.rootfs_size
+2024-03-07T11:39:57.729+0100 [TRACE] prepareFinalInputVariableValue: preparing var.rootfs_size
+2024-03-07T11:39:57.729+0100 [TRACE] prepareFinalInputVariableValue: var.rootfs_size has a default value
+2024-03-07T11:39:57.729+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.rootfs_size
+2024-03-07T11:39:57.729+0100 [TRACE] evalVariableValidations: no validation rules declared for var.rootfs_size, so skipping
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "var.rootfs_size": visit complete
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "var.vmid": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.729+0100 [TRACE] NodeRootVariable: evaluating var.vmid
+2024-03-07T11:39:57.729+0100 [TRACE] prepareFinalInputVariableValue: preparing var.vmid
+2024-03-07T11:39:57.729+0100 [TRACE] prepareFinalInputVariableValue: var.vmid has a default value
+2024-03-07T11:39:57.729+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.vmid
+2024-03-07T11:39:57.729+0100 [TRACE] evalVariableValidations: no validation rules declared for var.vmid, so skipping
+2024-03-07T11:39:57.729+0100 [DEBUG] created provider logger: level=trace
+2024-03-07T11:39:57.729+0100 [INFO]  provider: configuring client automatic mTLS
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "var.hostnames": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.729+0100 [TRACE] NodeRootVariable: evaluating var.hostnames
+2024-03-07T11:39:57.729+0100 [TRACE] prepareFinalInputVariableValue: preparing var.hostnames
+2024-03-07T11:39:57.729+0100 [TRACE] prepareFinalInputVariableValue: var.hostnames has a default value
+2024-03-07T11:39:57.729+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.hostnames
+2024-03-07T11:39:57.729+0100 [TRACE] evalVariableValidations: no validation rules declared for var.hostnames, so skipping
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "var.hostnames": visit complete
+2024-03-07T11:39:57.729+0100 [TRACE] vertex "var.vmid": visit complete
+2024-03-07T11:39:57.733+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1 args=[".terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1"]
+2024-03-07T11:39:57.733+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1 pid=12971
+2024-03-07T11:39:57.733+0100 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1
+2024-03-07T11:39:57.736+0100 [INFO]  provider.terraform-provider-proxmox_v3.0.1-rc1: configuring server automatic mTLS: timestamp="2024-03-07T11:39:57.736+0100"
+2024-03-07T11:39:57.753+0100 [DEBUG] provider.terraform-provider-proxmox_v3.0.1-rc1: plugin address: address=/tmp/plugin1327837327 network=unix timestamp="2024-03-07T11:39:57.753+0100"
+2024-03-07T11:39:57.753+0100 [DEBUG] provider: using plugin: version=5
+2024-03-07T11:39:57.762+0100 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/telmate/proxmox\"]" provider for provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.762+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.762+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.762+0100 [TRACE] NodeApplyableProvider: validating configuration for provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.762+0100 [TRACE] buildProviderConfig for provider["registry.terraform.io/telmate/proxmox"]: using explicit config only
+2024-03-07T11:39:57.762+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.762+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.762+0100 [TRACE] provider.stdio: waiting for stdio data
+2024-03-07T11:39:57.762+0100 [TRACE] GRPCProvider: ValidateProviderConfig
+2024-03-07T11:39:57.762+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.762+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.762+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received request: tf_rpc=PrepareProviderConfig tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:559 @module=sdk.proto tf_req_id=4da2b759-9f9e-9119-825a-55943befdd7d timestamp="2024-03-07T11:39:57.762+0100"
+2024-03-07T11:39:57.762+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Skipping protocol data file writing because no data directory is set. Use the TF_LOG_SDK_PROTO_DATA_DIR environment variable to enable this functionality.: @module=sdk.proto tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=4da2b759-9f9e-9119-825a-55943befdd7d tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/internal/logging/protocol_data.go:41 timestamp="2024-03-07T11:39:57.762+0100"
+2024-03-07T11:39:57.762+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Sending request downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:20 tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_rpc=PrepareProviderConfig @module=sdk.proto tf_req_id=4da2b759-9f9e-9119-825a-55943befdd7d timestamp="2024-03-07T11:39:57.762+0100"
+2024-03-07T11:39:57.762+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Preparing provider configuration: @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=4da2b759-9f9e-9119-825a-55943befdd7d tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:166 timestamp="2024-03-07T11:39:57.762+0100"
+2024-03-07T11:39:57.762+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Calling downstream: tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:254 @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=4da2b759-9f9e-9119-825a-55943befdd7d timestamp="2024-03-07T11:39:57.762+0100"
+2024-03-07T11:39:57.764+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Called downstream: tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=4da2b759-9f9e-9119-825a-55943befdd7d tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:256 @module=sdk.helper_schema timestamp="2024-03-07T11:39:57.764+0100"
+2024-03-07T11:39:57.764+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received downstream response: @module=sdk.proto diagnostic_warning_count=0 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_duration_ms=1 tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:40 diagnostic_error_count=0 tf_proto_version=5.4 tf_req_id=4da2b759-9f9e-9119-825a-55943befdd7d timestamp="2024-03-07T11:39:57.764+0100"
+2024-03-07T11:39:57.764+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Served request: tf_provider_addr=registry.terraform.io/telmate/proxmox tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:580 @module=sdk.proto tf_proto_version=5.4 tf_req_id=4da2b759-9f9e-9119-825a-55943befdd7d timestamp="2024-03-07T11:39:57.764+0100"
+2024-03-07T11:39:57.764+0100 [TRACE] vertex "provider[\"registry.terraform.io/telmate/proxmox\"]": visit complete
+2024-03-07T11:39:57.764+0100 [TRACE] vertex "proxmox_vm_qemu.prox-vm": starting visit (*terraform.NodeValidatableResource)
+2024-03-07T11:39:57.764+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.764+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.765+0100 [TRACE] GRPCProvider: ValidateResourceConfig
+2024-03-07T11:39:57.765+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.765+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.768+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received request: tf_req_id=8d106319-c0ec-b473-380c-bbff2fec92b4 tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:720 @module=sdk.proto tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_resource_type=proxmox_vm_qemu timestamp="2024-03-07T11:39:57.768+0100"
+2024-03-07T11:39:57.768+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Sending request downstream: tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_resource_type=proxmox_vm_qemu @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:20 @module=sdk.proto tf_req_id=8d106319-c0ec-b473-380c-bbff2fec92b4 tf_rpc=ValidateResourceTypeConfig timestamp="2024-03-07T11:39:57.768+0100"
+2024-03-07T11:39:57.769+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Calling downstream: @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=8d106319-c0ec-b473-380c-bbff2fec92b4 tf_resource_type=proxmox_vm_qemu tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:283 timestamp="2024-03-07T11:39:57.769+0100"
+2024-03-07T11:39:57.770+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Called downstream: tf_resource_type=proxmox_vm_qemu @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:285 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=8d106319-c0ec-b473-380c-bbff2fec92b4 @module=sdk.helper_schema tf_rpc=ValidateResourceTypeConfig timestamp="2024-03-07T11:39:57.770+0100"
+2024-03-07T11:39:57.770+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received downstream response: diagnostic_warning_count=2 tf_resource_type=proxmox_vm_qemu tf_rpc=ValidateResourceTypeConfig diagnostic_error_count=0 tf_req_duration_ms=1 tf_proto_version=5.4 tf_req_id=8d106319-c0ec-b473-380c-bbff2fec92b4 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:40 @module=sdk.proto tf_provider_addr=registry.terraform.io/telmate/proxmox timestamp="2024-03-07T11:39:57.770+0100"
+2024-03-07T11:39:57.770+0100 [WARN]  provider.terraform-provider-proxmox_v3.0.1-rc1: Response contains warning diagnostic: @module=sdk.proto diagnostic_detail="do not use anymore" tf_provider_addr=registry.terraform.io/telmate/proxmox tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:64 diagnostic_severity=WARNING tf_proto_version=5.4 tf_resource_type=proxmox_vm_qemu diagnostic_attribute="AttributeName(\"preprovision\")" diagnostic_summary="Argument is deprecated" tf_req_id=8d106319-c0ec-b473-380c-bbff2fec92b4 timestamp="2024-03-07T11:39:57.770+0100"
+2024-03-07T11:39:57.770+0100 [WARN]  provider.terraform-provider-proxmox_v3.0.1-rc1: Response contains warning diagnostic: diagnostic_severity=WARNING @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:64 diagnostic_attribute="AttributeName(\"disk\")" diagnostic_detail="Use `disks` instead" tf_proto_version=5.4 diagnostic_summary="Argument is deprecated" tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=8d106319-c0ec-b473-380c-bbff2fec92b4 tf_resource_type=proxmox_vm_qemu tf_rpc=ValidateResourceTypeConfig @module=sdk.proto timestamp="2024-03-07T11:39:57.770+0100"
+2024-03-07T11:39:57.770+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Served request: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:740 @module=sdk.proto tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=8d106319-c0ec-b473-380c-bbff2fec92b4 tf_rpc=ValidateResourceTypeConfig tf_proto_version=5.4 tf_resource_type=proxmox_vm_qemu timestamp="2024-03-07T11:39:57.770+0100"
+2024-03-07T11:39:57.770+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "remote-exec" to read its schema
+2024-03-07T11:39:57.770+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.770+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.770+0100 [TRACE] vertex "proxmox_vm_qemu.prox-vm": visit complete
+2024-03-07T11:39:57.770+0100 [TRACE] vertex "provider[\"registry.terraform.io/telmate/proxmox\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2024-03-07T11:39:57.770+0100 [TRACE] GRPCProvider: Close
+2024-03-07T11:39:57.771+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-03-07T11:39:57.772+0100 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1 pid=12971
+2024-03-07T11:39:57.772+0100 [DEBUG] provider: plugin exited
+2024-03-07T11:39:57.772+0100 [TRACE] vertex "provider[\"registry.terraform.io/telmate/proxmox\"] (close)": visit complete
+2024-03-07T11:39:57.772+0100 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2024-03-07T11:39:57.772+0100 [TRACE] vertex "root": visit complete
+2024-03-07T11:39:57.772+0100 [INFO]  backend/local: plan calling Plan
+2024-03-07T11:39:57.772+0100 [DEBUG] Building and walking plan graph for NormalMode
+2024-03-07T11:39:57.772+0100 [TRACE] building graph for walkPlan
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] ConfigTransformer: Starting for path:
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+  ------
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.LocalTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.OutputTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.checkTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.StateTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] StateTransformer: creating nodes for deposed instance objects only
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] AttachResourceConfigTransformer: attaching to "proxmox_vm_qemu.prox-vm (expand)" (*terraform.nodeExpandPlannableResource) config from main.tf:13,1-37
+2024-03-07T11:39:57.772+0100 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2024-03-07T11:39:57.772+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/telmate/proxmox\"]" provider configuration from main.tf:1,1-19
+2024-03-07T11:39:57.772+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.772+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/telmate/proxmox"] serving proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.772+0100 [DEBUG] ProviderTransformer: "proxmox_vm_qemu.prox-vm (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.772+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.772+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/telmate/proxmox" to read its schema
+2024-03-07T11:39:57.772+0100 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.772+0100 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/telmate/proxmox" to read its schema
+2024-03-07T11:39:57.772+0100 [TRACE] AttachSchemaTransformer: attaching resource schema to proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.772+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "remote-exec" to read its schema
+2024-03-07T11:39:57.772+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "remote-exec" config schema to proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.772+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.772+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.772+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.772+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2024-03-07T11:39:57.772+0100 [DEBUG] ReferenceTransformer: "var.user" references: []
+2024-03-07T11:39:57.772+0100 [DEBUG] ReferenceTransformer: "var.hostnames" references: []
+2024-03-07T11:39:57.772+0100 [DEBUG] ReferenceTransformer: "var.rootfs_size" references: []
+2024-03-07T11:39:57.772+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/telmate/proxmox\"]" references: [var.proxmox_host var.proxmox_host var.proxmox_host]
+2024-03-07T11:39:57.772+0100 [DEBUG] ReferenceTransformer: "var.ssh_keys" references: []
+2024-03-07T11:39:57.772+0100 [DEBUG] ReferenceTransformer: "proxmox_vm_qemu.prox-vm (expand)" references: [var.hostnames var.proxmox_host var.hostnames var.ips var.ips var.vmid var.user var.ips var.ssh_keys var.user var.ssh_keys var.ips var.user var.ssh_keys var.ips]
+2024-03-07T11:39:57.772+0100 [DEBUG] ReferenceTransformer: "var.proxmox_host" references: []
+2024-03-07T11:39:57.772+0100 [DEBUG] ReferenceTransformer: "var.vmid" references: []
+2024-03-07T11:39:57.772+0100 [DEBUG] ReferenceTransformer: "var.ips" references: []
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] AttachDependenciesTransformer: proxmox_vm_qemu.prox-vm depends on []
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.attachDataResourceDependsOnTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.attachDataResourceDependsOnTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2024-03-07T11:39:57.772+0100 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2024-03-07T11:39:57.772+0100 [TRACE] ForcedCBDTransformer: "proxmox_vm_qemu.prox-vm (expand)" (*terraform.nodeExpandPlannableResource) has no CBD descendent, so skipping
+2024-03-07T11:39:57.773+0100 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2024-03-07T11:39:57.773+0100 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2024-03-07T11:39:57.773+0100 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.773+0100 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2024-03-07T11:39:57.773+0100 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    var.rootfs_size - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.773+0100 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2024-03-07T11:39:57.773+0100 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandPlannableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    var.rootfs_size - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.773+0100 [DEBUG] Starting graph walk: walkPlan
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.user": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.773+0100 [TRACE] NodeRootVariable: evaluating var.user
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: preparing var.user
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.user has a default value
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.user has no defined value
+2024-03-07T11:39:57.773+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.user
+2024-03-07T11:39:57.773+0100 [TRACE] evalVariableValidations: no validation rules declared for var.user, so skipping
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.user": visit complete
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.rootfs_size": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.773+0100 [TRACE] NodeRootVariable: evaluating var.rootfs_size
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: preparing var.rootfs_size
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.rootfs_size has a default value
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.rootfs_size has no defined value
+2024-03-07T11:39:57.773+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.rootfs_size
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.proxmox_host": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.773+0100 [TRACE] NodeRootVariable: evaluating var.proxmox_host
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: preparing var.proxmox_host
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.proxmox_host has a default value
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.proxmox_host has no defined value
+2024-03-07T11:39:57.773+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.proxmox_host
+2024-03-07T11:39:57.773+0100 [TRACE] evalVariableValidations: no validation rules declared for var.proxmox_host, so skipping
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.proxmox_host": visit complete
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "provider[\"registry.terraform.io/telmate/proxmox\"]": starting visit (*terraform.NodeApplyableProvider)
+2024-03-07T11:39:57.773+0100 [TRACE] evalVariableValidations: no validation rules declared for var.rootfs_size, so skipping
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.rootfs_size": visit complete
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.ips": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.773+0100 [DEBUG] created provider logger: level=trace
+2024-03-07T11:39:57.773+0100 [TRACE] NodeRootVariable: evaluating var.ips
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: preparing var.ips
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.ips has a default value
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.ips has no defined value
+2024-03-07T11:39:57.773+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.ips
+2024-03-07T11:39:57.773+0100 [INFO]  provider: configuring client automatic mTLS
+2024-03-07T11:39:57.773+0100 [TRACE] evalVariableValidations: no validation rules declared for var.ips, so skipping
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.ips": visit complete
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.vmid": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.773+0100 [TRACE] NodeRootVariable: evaluating var.vmid
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: preparing var.vmid
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.vmid has a default value
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.vmid has no defined value
+2024-03-07T11:39:57.773+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.vmid
+2024-03-07T11:39:57.773+0100 [TRACE] evalVariableValidations: no validation rules declared for var.vmid, so skipping
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.vmid": visit complete
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.hostnames": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.773+0100 [TRACE] NodeRootVariable: evaluating var.hostnames
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: preparing var.hostnames
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.hostnames has a default value
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.hostnames has no defined value
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.ssh_keys": starting visit (*terraform.NodeRootVariable)
+2024-03-07T11:39:57.773+0100 [TRACE] NodeRootVariable: evaluating var.ssh_keys
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: preparing var.ssh_keys
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.ssh_keys has a default value
+2024-03-07T11:39:57.773+0100 [TRACE] prepareFinalInputVariableValue: var.ssh_keys has no defined value
+2024-03-07T11:39:57.773+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.hostnames
+2024-03-07T11:39:57.773+0100 [TRACE] evalVariableValidations: no validation rules declared for var.hostnames, so skipping
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.hostnames": visit complete
+2024-03-07T11:39:57.773+0100 [TRACE] BuiltinEvalContext: Storing final value for variable var.ssh_keys
+2024-03-07T11:39:57.773+0100 [TRACE] evalVariableValidations: no validation rules declared for var.ssh_keys, so skipping
+2024-03-07T11:39:57.773+0100 [TRACE] vertex "var.ssh_keys": visit complete
+2024-03-07T11:39:57.777+0100 [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1 args=[".terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1"]
+2024-03-07T11:39:57.777+0100 [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1 pid=12983
+2024-03-07T11:39:57.777+0100 [DEBUG] provider: waiting for RPC address: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1
+2024-03-07T11:39:57.780+0100 [INFO]  provider.terraform-provider-proxmox_v3.0.1-rc1: configuring server automatic mTLS: timestamp="2024-03-07T11:39:57.780+0100"
+2024-03-07T11:39:57.797+0100 [DEBUG] provider.terraform-provider-proxmox_v3.0.1-rc1: plugin address: address=/tmp/plugin55591743 network=unix timestamp="2024-03-07T11:39:57.797+0100"
+2024-03-07T11:39:57.797+0100 [DEBUG] provider: using plugin: version=5
+2024-03-07T11:39:57.806+0100 [TRACE] BuiltinEvalContext: Initialized "provider[\"registry.terraform.io/telmate/proxmox\"]" provider for provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.806+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.806+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.806+0100 [TRACE] NodeApplyableProvider: configuring provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.806+0100 [TRACE] buildProviderConfig for provider["registry.terraform.io/telmate/proxmox"]: using explicit config only
+2024-03-07T11:39:57.806+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.806+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.806+0100 [TRACE] provider.stdio: waiting for stdio data
+2024-03-07T11:39:57.806+0100 [TRACE] GRPCProvider: ValidateProviderConfig
+2024-03-07T11:39:57.806+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.806+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.806+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received request: tf_provider_addr=registry.terraform.io/telmate/proxmox tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:559 @module=sdk.proto tf_proto_version=5.4 tf_req_id=2c469b8e-eaca-99de-e0e6-c2bbb8a83ebc timestamp="2024-03-07T11:39:57.806+0100"
+2024-03-07T11:39:57.806+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Skipping protocol data file writing because no data directory is set. Use the TF_LOG_SDK_PROTO_DATA_DIR environment variable to enable this functionality.: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/internal/logging/protocol_data.go:41 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_rpc=PrepareProviderConfig tf_req_id=2c469b8e-eaca-99de-e0e6-c2bbb8a83ebc @module=sdk.proto tf_proto_version=5.4 timestamp="2024-03-07T11:39:57.806+0100"
+2024-03-07T11:39:57.806+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Sending request downstream: tf_req_id=2c469b8e-eaca-99de-e0e6-c2bbb8a83ebc tf_rpc=PrepareProviderConfig @module=sdk.proto tf_provider_addr=registry.terraform.io/telmate/proxmox tf_proto_version=5.4 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:20 timestamp="2024-03-07T11:39:57.806+0100"
+2024-03-07T11:39:57.806+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Preparing provider configuration: tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:166 @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=2c469b8e-eaca-99de-e0e6-c2bbb8a83ebc timestamp="2024-03-07T11:39:57.806+0100"
+2024-03-07T11:39:57.806+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Calling downstream: @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=2c469b8e-eaca-99de-e0e6-c2bbb8a83ebc tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:254 timestamp="2024-03-07T11:39:57.806+0100"
+2024-03-07T11:39:57.807+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Called downstream: tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=2c469b8e-eaca-99de-e0e6-c2bbb8a83ebc tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:256 @module=sdk.helper_schema timestamp="2024-03-07T11:39:57.807+0100"
+2024-03-07T11:39:57.807+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received downstream response: @module=sdk.proto tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_duration_ms=1 tf_req_id=2c469b8e-eaca-99de-e0e6-c2bbb8a83ebc tf_rpc=PrepareProviderConfig diagnostic_error_count=0 diagnostic_warning_count=0 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:40 timestamp="2024-03-07T11:39:57.807+0100"
+2024-03-07T11:39:57.807+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Served request: @module=sdk.proto tf_proto_version=5.4 tf_rpc=PrepareProviderConfig @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:580 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=2c469b8e-eaca-99de-e0e6-c2bbb8a83ebc timestamp="2024-03-07T11:39:57.807+0100"
+2024-03-07T11:39:57.808+0100 [WARN]  ValidateProviderConfig from "provider[\"registry.terraform.io/telmate/proxmox\"]" changed the config value, but that value is unused
+2024-03-07T11:39:57.808+0100 [TRACE] GRPCProvider: ConfigureProvider
+2024-03-07T11:39:57.808+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.808+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.808+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received request: tf_req_id=69521f98-5e90-7c13-bee5-68329bd7017c tf_rpc=Configure @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:588 tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox @module=sdk.proto timestamp="2024-03-07T11:39:57.808+0100"
+2024-03-07T11:39:57.808+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Sending request downstream: @module=sdk.proto tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=69521f98-5e90-7c13-bee5-68329bd7017c @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:20 tf_rpc=Configure timestamp="2024-03-07T11:39:57.808+0100"
+2024-03-07T11:39:57.808+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Calling downstream: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:606 @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=69521f98-5e90-7c13-bee5-68329bd7017c tf_rpc=Configure timestamp="2024-03-07T11:39:57.808+0100"
+2024-03-07T11:39:57.818+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Called downstream: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:608 @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=69521f98-5e90-7c13-bee5-68329bd7017c tf_rpc=Configure timestamp="2024-03-07T11:39:57.817+0100"
+2024-03-07T11:39:57.818+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received downstream response: @module=sdk.proto diagnostic_warning_count=0 tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_duration_ms=9 tf_req_id=69521f98-5e90-7c13-bee5-68329bd7017c tf_rpc=Configure @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:40 diagnostic_error_count=0 timestamp="2024-03-07T11:39:57.817+0100"
+2024-03-07T11:39:57.818+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Served request: @module=sdk.proto tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_rpc=Configure @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:608 tf_req_id=69521f98-5e90-7c13-bee5-68329bd7017c timestamp="2024-03-07T11:39:57.818+0100"
+2024-03-07T11:39:57.818+0100 [TRACE] vertex "provider[\"registry.terraform.io/telmate/proxmox\"]": visit complete
+2024-03-07T11:39:57.818+0100 [TRACE] vertex "proxmox_vm_qemu.prox-vm (expand)": starting visit (*terraform.nodeExpandPlannableResource)
+2024-03-07T11:39:57.818+0100 [TRACE] vertex "proxmox_vm_qemu.prox-vm (expand)": expanding dynamic subgraph
+2024-03-07T11:39:57.818+0100 [TRACE] Executing graph transform *terraform.ResourceCountTransformer
+2024-03-07T11:39:57.818+0100 [TRACE] ResourceCountTransformer: adding proxmox_vm_qemu.prox-vm[0] as *terraform.NodePlannableResourceInstance
+2024-03-07T11:39:57.818+0100 [TRACE] Completed graph transform *terraform.ResourceCountTransformer with new graph:
+  proxmox_vm_qemu.prox-vm[0] - *terraform.NodePlannableResourceInstance
+  ------
+2024-03-07T11:39:57.818+0100 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceCountTransformer
+2024-03-07T11:39:57.818+0100 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceCountTransformer (no changes)
+2024-03-07T11:39:57.818+0100 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2024-03-07T11:39:57.818+0100 [DEBUG] Resource instance state not found for node "proxmox_vm_qemu.prox-vm[0]", instance proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.818+0100 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2024-03-07T11:39:57.818+0100 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2024-03-07T11:39:57.818+0100 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2024-03-07T11:39:57.818+0100 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2024-03-07T11:39:57.818+0100 [DEBUG] ReferenceTransformer: "proxmox_vm_qemu.prox-vm[0]" references: []
+2024-03-07T11:39:57.818+0100 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2024-03-07T11:39:57.818+0100 [TRACE] Executing graph transform *terraform.RootTransformer
+2024-03-07T11:39:57.818+0100 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  proxmox_vm_qemu.prox-vm[0] - *terraform.NodePlannableResourceInstance
+  root - terraform.graphNodeRoot
+    proxmox_vm_qemu.prox-vm[0] - *terraform.NodePlannableResourceInstance
+  ------
+2024-03-07T11:39:57.818+0100 [TRACE] vertex "proxmox_vm_qemu.prox-vm (expand)": entering dynamic subgraph
+2024-03-07T11:39:57.818+0100 [TRACE] vertex "proxmox_vm_qemu.prox-vm[0]": starting visit (*terraform.NodePlannableResourceInstance)
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.818+0100 [TRACE] readResourceInstanceState: reading state for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.818+0100 [TRACE] readResourceInstanceState: no state present for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.818+0100 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to prevRunState for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.818+0100 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.818+0100 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.818+0100 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.818+0100 [TRACE] NodeAbstractResourceInstance.refresh for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.818+0100 [DEBUG] refresh: proxmox_vm_qemu.prox-vm[0]: no state, so not refreshing
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.818+0100 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to refreshState for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.818+0100 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: removing state object for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.818+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.820+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.820+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.821+0100 [TRACE] Re-validating config for "proxmox_vm_qemu.prox-vm[0]"
+2024-03-07T11:39:57.821+0100 [TRACE] GRPCProvider: ValidateResourceConfig
+2024-03-07T11:39:57.821+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.821+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.823+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received request: tf_provider_addr=registry.terraform.io/telmate/proxmox tf_resource_type=proxmox_vm_qemu @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:720 @module=sdk.proto tf_proto_version=5.4 tf_req_id=c10cc747-9b30-e898-a297-ba03748d6c3c tf_rpc=ValidateResourceTypeConfig timestamp="2024-03-07T11:39:57.823+0100"
+2024-03-07T11:39:57.823+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Sending request downstream: tf_proto_version=5.4 tf_rpc=ValidateResourceTypeConfig @module=sdk.proto tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=c10cc747-9b30-e898-a297-ba03748d6c3c tf_resource_type=proxmox_vm_qemu @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:20 timestamp="2024-03-07T11:39:57.823+0100"
+2024-03-07T11:39:57.825+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Calling downstream: tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=c10cc747-9b30-e898-a297-ba03748d6c3c tf_rpc=ValidateResourceTypeConfig @module=sdk.helper_schema tf_resource_type=proxmox_vm_qemu @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:283 timestamp="2024-03-07T11:39:57.825+0100"
+2024-03-07T11:39:57.825+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Called downstream: @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_resource_type=proxmox_vm_qemu tf_rpc=ValidateResourceTypeConfig @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/grpc_provider.go:285 tf_req_id=c10cc747-9b30-e898-a297-ba03748d6c3c timestamp="2024-03-07T11:39:57.825+0100"
+2024-03-07T11:39:57.825+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received downstream response: tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=c10cc747-9b30-e898-a297-ba03748d6c3c @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:40 diagnostic_error_count=0 diagnostic_warning_count=2 @module=sdk.proto tf_proto_version=5.4 tf_req_duration_ms=2 tf_resource_type=proxmox_vm_qemu tf_rpc=ValidateResourceTypeConfig timestamp="2024-03-07T11:39:57.825+0100"
+2024-03-07T11:39:57.825+0100 [WARN]  provider.terraform-provider-proxmox_v3.0.1-rc1: Response contains warning diagnostic: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:64 diagnostic_attribute="AttributeName(\"preprovision\")" diagnostic_summary="Argument is deprecated" tf_resource_type=proxmox_vm_qemu @module=sdk.proto tf_req_id=c10cc747-9b30-e898-a297-ba03748d6c3c tf_rpc=ValidateResourceTypeConfig tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox diagnostic_detail="do not use anymore" diagnostic_severity=WARNING timestamp="2024-03-07T11:39:57.825+0100"
+2024-03-07T11:39:57.825+0100 [WARN]  provider.terraform-provider-proxmox_v3.0.1-rc1: Response contains warning diagnostic: diagnostic_attribute="AttributeName(\"disk\")" tf_resource_type=proxmox_vm_qemu tf_rpc=ValidateResourceTypeConfig @module=sdk.proto diagnostic_detail="Use `disks` instead" diagnostic_severity=WARNING tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=c10cc747-9b30-e898-a297-ba03748d6c3c diagnostic_summary="Argument is deprecated" tf_proto_version=5.4 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/diag/diagnostics.go:64 timestamp="2024-03-07T11:39:57.825+0100"
+2024-03-07T11:39:57.825+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Served request: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:740 tf_resource_type=proxmox_vm_qemu tf_rpc=ValidateResourceTypeConfig tf_req_id=c10cc747-9b30-e898-a297-ba03748d6c3c @module=sdk.proto tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox timestamp="2024-03-07T11:39:57.825+0100"
+2024-03-07T11:39:57.827+0100 [TRACE] GRPCProvider: PlanResourceChange
+2024-03-07T11:39:57.827+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.827+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.832+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received request: tf_rpc=PlanResourceChange @module=sdk.proto tf_resource_type=proxmox_vm_qemu @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:811 tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=c17d496c-8bcf-caad-60a9-af9c2509c3ec timestamp="2024-03-07T11:39:57.832+0100"
+2024-03-07T11:39:57.832+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Sending request downstream: @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:20 @module=sdk.proto tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=c17d496c-8bcf-caad-60a9-af9c2509c3ec tf_resource_type=proxmox_vm_qemu tf_rpc=PlanResourceChange tf_proto_version=5.4 timestamp="2024-03-07T11:39:57.832+0100"
+2024-03-07T11:39:57.895+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Calling downstream: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/schema.go:697 tf_resource_type=proxmox_vm_qemu tf_rpc=PlanResourceChange @module=sdk.helper_schema tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=c17d496c-8bcf-caad-60a9-af9c2509c3ec timestamp="2024-03-07T11:39:57.895+0100"
+2024-03-07T11:39:57.895+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Called downstream: @caller=github.com/hashicorp/terraform-plugin-sdk/v2@v2.31.0/helper/schema/schema.go:699 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_req_id=c17d496c-8bcf-caad-60a9-af9c2509c3ec tf_resource_type=proxmox_vm_qemu tf_rpc=PlanResourceChange @module=sdk.helper_schema timestamp="2024-03-07T11:39:57.895+0100"
+2024-03-07T11:39:57.900+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Received downstream response: tf_proto_version=5.4 tf_req_id=c17d496c-8bcf-caad-60a9-af9c2509c3ec diagnostic_warning_count=0 @module=sdk.proto diagnostic_error_count=0 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_resource_type=proxmox_vm_qemu tf_req_duration_ms=66 @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/internal/tf5serverlogging/downstream_request.go:40 tf_rpc=PlanResourceChange timestamp="2024-03-07T11:39:57.899+0100"
+2024-03-07T11:39:57.900+0100 [TRACE] provider.terraform-provider-proxmox_v3.0.1-rc1: Served request: tf_rpc=PlanResourceChange @caller=github.com/hashicorp/terraform-plugin-go@v0.20.0/tfprotov5/tf5server/server.go:837 @module=sdk.proto tf_proto_version=5.4 tf_provider_addr=registry.terraform.io/telmate/proxmox tf_resource_type=proxmox_vm_qemu tf_req_id=c17d496c-8bcf-caad-60a9-af9c2509c3ec timestamp="2024-03-07T11:39:57.899+0100"
+2024-03-07T11:39:57.904+0100 [WARN]  Provider "registry.terraform.io/telmate/proxmox" produced an invalid plan for proxmox_vm_qemu.prox-vm[0], but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .hotplug: planned value cty.StringVal("network,disk,usb") for a non-computed attribute
+      - .clone_wait: planned value cty.NumberIntVal(10) for a non-computed attribute
+      - .oncreate: planned value cty.False for a non-computed attribute
+      - .ci_wait: planned value cty.NullVal(cty.Number) does not match config value cty.NumberIntVal(40)
+      - .force_create: planned value cty.False for a non-computed attribute
+      - .vm_state: planned value cty.StringVal("running") for a non-computed attribute
+      - .guest_agent_ready_timeout: planned value cty.NumberIntVal(100) for a non-computed attribute
+      - .bios: planned value cty.StringVal("seabios") for a non-computed attribute
+      - .kvm: planned value cty.True for a non-computed attribute
+      - .balloon: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .vlan: planned value cty.NumberIntVal(-1) for a non-computed attribute
+      - .automatic_reboot: planned value cty.True for a non-computed attribute
+      - .tablet: planned value cty.True for a non-computed attribute
+      - .onboot: planned value cty.False for a non-computed attribute
+      - .define_connection_info: planned value cty.True for a non-computed attribute
+      - .vcpus: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .additional_wait: planned value cty.NumberIntVal(5) for a non-computed attribute
+      - .smbios: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .disk[0].mbps: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].mbps_wr_max: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].iops_rd: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].iops_rd_max: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].iops: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].iops_wr_max: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].mbps_wr: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].iops_wr_max_length: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].replicate: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].iops_max: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].backup: planned value cty.True for a non-computed attribute
+      - .disk[0].iops_rd_max_length: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].iothread: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].mbps_rd_max: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].cache: planned value cty.StringVal("none") for a non-computed attribute
+      - .disk[0].iops_max_length: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].iops_wr: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].mbps_rd: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .disk[0].ssd: planned value cty.NumberIntVal(0) for a non-computed attribute
+      - .network[0].tag: planned value cty.NumberIntVal(-1) for a non-computed attribute
+      - .network[0].firewall: planned value cty.False for a non-computed attribute
+      - .network[0].link_down: planned value cty.False for a non-computed attribute
+2024-03-07T11:39:57.904+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.904+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.907+0100 [TRACE] writeChange: recorded Create change for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.907+0100 [TRACE] GRPCProvider: GetProviderSchema
+2024-03-07T11:39:57.907+0100 [TRACE] GRPCProvider: returning cached schema: EXTRA_VALUE_AT_END=registry.terraform.io/telmate/proxmox
+2024-03-07T11:39:57.907+0100 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState to workingState for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.907+0100 [TRACE] NodeAbstractResouceInstance.writeResourceInstanceState: writing state object for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.909+0100 [TRACE] vertex "proxmox_vm_qemu.prox-vm[0]": visit complete
+2024-03-07T11:39:57.909+0100 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2024-03-07T11:39:57.909+0100 [TRACE] vertex "root": visit complete
+2024-03-07T11:39:57.909+0100 [TRACE] vertex "proxmox_vm_qemu.prox-vm (expand)": dynamic subgraph completed successfully
+2024-03-07T11:39:57.909+0100 [TRACE] vertex "proxmox_vm_qemu.prox-vm (expand)": visit complete
+2024-03-07T11:39:57.909+0100 [TRACE] vertex "provider[\"registry.terraform.io/telmate/proxmox\"] (close)": starting visit (*terraform.graphNodeCloseProvider)
+2024-03-07T11:39:57.909+0100 [TRACE] GRPCProvider: Close
+2024-03-07T11:39:57.909+0100 [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2024-03-07T11:39:57.911+0100 [DEBUG] provider: plugin process exited: path=.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc1/linux_amd64/terraform-provider-proxmox_v3.0.1-rc1 pid=12983
+2024-03-07T11:39:57.911+0100 [DEBUG] provider: plugin exited
+2024-03-07T11:39:57.911+0100 [TRACE] vertex "provider[\"registry.terraform.io/telmate/proxmox\"] (close)": visit complete
+2024-03-07T11:39:57.911+0100 [TRACE] vertex "root": starting visit (*terraform.nodeCloseModule)
+2024-03-07T11:39:57.911+0100 [TRACE] vertex "root": visit complete
+2024-03-07T11:39:57.911+0100 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/telmate/proxmox"
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/telmate/proxmox" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] LoadSchemas: retrieving schema for provisioner "remote-exec"
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "remote-exec" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] LoadSchemas: retrieving schema for provisioner "local-exec"
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.911+0100 [DEBUG] building apply graph to check for errors
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] ConfigTransformer: Starting for path:
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+  ------
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.LocalTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.OutputTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.DiffTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] DiffTransformer starting
+2024-03-07T11:39:57.911+0100 [TRACE] DiffTransformer: found Create change for proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.911+0100 [TRACE] DiffTransformer: proxmox_vm_qemu.prox-vm[0] will be represented by proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.911+0100 [TRACE] DiffTransformer complete
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.DiffTransformer with new graph:
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+  proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.checkTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.checkTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2024-03-07T11:39:57.911+0100 [DEBUG] Resource state not found for node "proxmox_vm_qemu.prox-vm[0]", instance proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] AttachResourceConfigTransformer: attaching to "proxmox_vm_qemu.prox-vm[0]" (*terraform.NodeApplyableResourceInstance) config from main.tf:13,1-37
+2024-03-07T11:39:57.911+0100 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.911+0100 [TRACE] AttachResourceConfigTransformer: attaching to "proxmox_vm_qemu.prox-vm (expand)" (*terraform.nodeExpandApplyableResource) config from main.tf:13,1-37
+2024-03-07T11:39:57.911+0100 [TRACE] AttachResourceConfigTransformer: attaching provider meta configs to proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2024-03-07T11:39:57.911+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] ProviderConfigTransformer: attaching to "provider[\"registry.terraform.io/telmate/proxmox\"]" provider configuration from main.tf:1,1-19
+2024-03-07T11:39:57.911+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+  proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.911+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/telmate/proxmox"] serving proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.911+0100 [DEBUG] ProviderTransformer: "proxmox_vm_qemu.prox-vm (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.911+0100 [TRACE] ProviderTransformer: exact match for provider["registry.terraform.io/telmate/proxmox"] serving proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.911+0100 [DEBUG] ProviderTransformer: "proxmox_vm_qemu.prox-vm[0]" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.911+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.911+0100 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+  proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/telmate/proxmox" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] AttachSchemaTransformer: attaching resource schema to proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "remote-exec" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "remote-exec" config schema to proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to proxmox_vm_qemu.prox-vm (expand)
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/telmate/proxmox" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] AttachSchemaTransformer: attaching resource schema to proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "remote-exec" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "remote-exec" config schema to proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] AttachSchemaTransformer: attaching provisioner "local-exec" config schema to proxmox_vm_qemu.prox-vm[0]
+2024-03-07T11:39:57.911+0100 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/telmate/proxmox" to read its schema
+2024-03-07T11:39:57.911+0100 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider["registry.terraform.io/telmate/proxmox"]
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.ModuleExpansionTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.ModuleExpansionTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.ExternalReferenceTransformer
+2024-03-07T11:39:57.911+0100 [TRACE] Completed graph transform *terraform.ExternalReferenceTransformer (no changes)
+2024-03-07T11:39:57.911+0100 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2024-03-07T11:39:57.912+0100 [DEBUG] ReferenceTransformer: "proxmox_vm_qemu.prox-vm[0]" references: [var.hostnames var.proxmox_host var.hostnames var.ips var.ips var.vmid var.ssh_keys var.user var.ips var.user var.ssh_keys var.ips var.user var.ssh_keys var.ips]
+2024-03-07T11:39:57.912+0100 [DEBUG] ReferenceTransformer: "proxmox_vm_qemu.prox-vm (expand)" references: [var.hostnames var.hostnames var.ips var.ips var.proxmox_host var.vmid var.ssh_keys var.user var.ips var.user var.ssh_keys var.ips var.user var.ssh_keys var.ips]
+2024-03-07T11:39:57.912+0100 [DEBUG] ReferenceTransformer: "var.user" references: []
+2024-03-07T11:39:57.912+0100 [DEBUG] ReferenceTransformer: "var.hostnames" references: []
+2024-03-07T11:39:57.912+0100 [DEBUG] ReferenceTransformer: "var.rootfs_size" references: []
+2024-03-07T11:39:57.912+0100 [DEBUG] ReferenceTransformer: "var.ips" references: []
+2024-03-07T11:39:57.912+0100 [DEBUG] ReferenceTransformer: "var.ssh_keys" references: []
+2024-03-07T11:39:57.912+0100 [DEBUG] ReferenceTransformer: "var.proxmox_host" references: []
+2024-03-07T11:39:57.912+0100 [DEBUG] ReferenceTransformer: "var.vmid" references: []
+2024-03-07T11:39:57.912+0100 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/telmate/proxmox\"]" references: [var.proxmox_host var.proxmox_host var.proxmox_host]
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.912+0100 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2024-03-07T11:39:57.912+0100 [TRACE] AttachDependenciesTransformer: proxmox_vm_qemu.prox-vm depends on []
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2024-03-07T11:39:57.912+0100 [TRACE] Executing graph transform *terraform.checkStartTransformer
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.checkStartTransformer (no changes)
+2024-03-07T11:39:57.912+0100 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2024-03-07T11:39:57.912+0100 [TRACE] ForcedCBDTransformer: "proxmox_vm_qemu.prox-vm[0]" (*terraform.NodeApplyableResourceInstance) has no CBD descendent, so skipping
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2024-03-07T11:39:57.912+0100 [TRACE] Executing graph transform *terraform.DestroyEdgeTransformer
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.DestroyEdgeTransformer (no changes)
+2024-03-07T11:39:57.912+0100 [TRACE] Executing graph transform *terraform.CBDEdgeTransformer
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.CBDEdgeTransformer (no changes)
+2024-03-07T11:39:57.912+0100 [TRACE] Executing graph transform *terraform.pruneUnusedNodesTransformer
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.pruneUnusedNodesTransformer (no changes)
+2024-03-07T11:39:57.912+0100 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2024-03-07T11:39:57.912+0100 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.912+0100 [TRACE] Executing graph transform *terraform.CloseRootModuleTransformer
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.CloseRootModuleTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.proxmox_host - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    var.rootfs_size - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.912+0100 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2024-03-07T11:39:57.912+0100 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.proxmox_host - *terraform.NodeRootVariable
+  provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+  proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+    provider["registry.terraform.io/telmate/proxmox"] - *terraform.NodeApplyableProvider
+    var.hostnames - *terraform.NodeRootVariable
+    var.ips - *terraform.NodeRootVariable
+    var.ssh_keys - *terraform.NodeRootVariable
+    var.user - *terraform.NodeRootVariable
+    var.vmid - *terraform.NodeRootVariable
+  proxmox_vm_qemu.prox-vm[0] - *terraform.NodeApplyableResourceInstance
+    proxmox_vm_qemu.prox-vm (expand) - *terraform.nodeExpandApplyableResource
+  root - *terraform.nodeCloseModule
+    provider["registry.terraform.io/telmate/proxmox"] (close) - *terraform.graphNodeCloseProvider
+    var.rootfs_size - *terraform.NodeRootVariable
+  var.hostnames - *terraform.NodeRootVariable
+  var.ips - *terraform.NodeRootVariable
+  var.proxmox_host - *terraform.NodeRootVariable
+  var.rootfs_size - *terraform.NodeRootVariable
+  var.ssh_keys - *terraform.NodeRootVariable
+  var.user - *terraform.NodeRootVariable
+  var.vmid - *terraform.NodeRootVariable
+  ------
+2024-03-07T11:39:57.912+0100 [INFO]  backend/local: plan operation completed
+2024-03-07T11:39:57.912+0100 [TRACE] LoadSchemas: retrieving schema for provider type "registry.terraform.io/telmate/proxmox"
+2024-03-07T11:39:57.912+0100 [TRACE] terraform.contextPlugins: Initializing provider "registry.terraform.io/telmate/proxmox" to read its schema
+2024-03-07T11:39:57.912+0100 [TRACE] LoadSchemas: retrieving schema for provisioner "remote-exec"
+2024-03-07T11:39:57.912+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "remote-exec" to read its schema
+2024-03-07T11:39:57.912+0100 [TRACE] LoadSchemas: retrieving schema for provisioner "local-exec"
+2024-03-07T11:39:57.912+0100 [TRACE] terraform.contextPlugins: Initializing provisioner "local-exec" to read its schema
+2024-03-07T11:39:57.916+0100 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2024-03-07T11:39:57.916+0100 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock

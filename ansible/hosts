@@ -1,0 +1,2 @@
+[webserver]
+134.34.206.210 ansible_user=ubuntu 

@@ -1,4 +1,3 @@
----
 - hosts: all
   become: yes
   tasks:
@@ -11,45 +10,50 @@
          update_cache: yes
          cache_valid_time: 86400 #One day
 
-     - name: Make sure we have a 'wheel' group
-       group:
-         name: wheel
-         state: present
 
-     - name: Allow 'wheel' group to have passwordless sudo
-       lineinfile:
-         dest: /etc/sudoers
-         state: present
-         regexp: '^%wheel'
-         line: '%wheel ALL=(ALL) NOPASSWD: ALL'
-         validate: 'visudo -cf %s'
+      - name: Make sure we have a 'workers' group
+        group:
+           name: workers
+           state: present
 
-     - name: Add sudoers users to wheel group
-       user:
-         name: notroot
-         groups: wheel
-         append: yes
-         state: present
-         createhome: yes
-         shell: /bin/bash
+      
+      - name: Allow 'workers' group to have passwordless sudo
+         lineinfile:
+           dest: /etc/sudoers
+           state: present
+           regexp: '^%workers'
+           line: '%workers ALL=(ALL) NOPASSWD: ALL'
+           validate: 'visudo -cf %s'
 
-     - name: Create necessary folders
-       file: 
-         path: "{{ item }}"
-         recurse: yes
-         state: directory
-       with_items:
-         - /home/notroot/.ssh/
 
-     - name: Copy Secured SSHD Configuration
-       copy: src=sshd_config_secured dest=/etc/ssh/sshd_config owner=root group=root mode=0644
-       #sudo: yes
+       - name: Add sudoers users to workers group
+         user:
+           name: ubuntu
+           groups: workers
+           append: yes
+           state: present
+           createhome: yes
+           shell: /bin/bash
+        
+       - name: Create necessary folders
+         file: 
+           path: "{{ item }}"
+           recurse: yes
+           state: directory
+           with_items:
+                 - /home/ubuntu/.ssh/
 
-     - name: Disable IPv6
-       sysctl: 
-         name: "{{ item }}" 
+
+
+       - name: Copy Secured SSHD Configuration
+         copy: src=sshd_config_secured dest=/etc/ssh/sshd_config owner=ubuntu group=ubuntu mode=0644
+
+
+      - name: Disable IPv6
+        sysctl:
+          name: "{{ item }}"
          value: '1'
-         sysctl_set: yes 
+         sysctl_set: yes
          state: present
        with_items:
          - net.ipv6.conf.all.disable_ipv6
@@ -64,8 +68,8 @@
        copy:
          src: "{{ item.src }}"
          dest: "{{ item.dest }}"
-         owner: notroot
-         group: notroot
+         owner: ubuntu
+         group: ubuntu
          mode: 0400
        with_items:
-         - { src: 'authorized_keys', dest: '/home/notroot/.ssh/authorized_keys' }
+         - { src: 'authorized_keys', dest: '/home/ubuntu/.ssh/authorized_keys' }

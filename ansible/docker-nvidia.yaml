@@ -1,0 +1,75 @@
+---
+- name: Install Docker Engine and NVIDIA Container Toolkit on Ubuntu
+  hosts: all
+  become: true
+  tasks:
+    - name: Add Docker's official GPG key
+      shell: |
+        apt-get update &&
+        apt-get install -y ca-certificates curl &&
+        install -m 0755 -d /etc/apt/keyrings &&
+        curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc &&
+        chmod a+r /etc/apt/keyrings/docker.asc
+
+    - name: Add the Docker repository to Apt sources
+      shell: |
+        echo 'deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo \"$VERSION_CODENAME\") stable' | tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Docker packages
+      apt:
+        name: "{{ item }}"
+        state: present
+      with_items:
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+
+    - name: Add docker group
+      shell: |
+        groupadd docker
+
+    - name: Add user to docker group
+      shell: |
+        usermod -aG docker $USER
+
+    - name: Add NVIDIA Container Toolkit's GPG key and repository
+      shell: |
+        curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
+        && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
+        sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
+        tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
+
+    - name: Uncomment experimental repository in NVIDIA Container Toolkit's repository
+      replace:
+        path: /etc/apt/sources.list.d/nvidia-container-toolkit.list
+        regexp: '^#(.*experimental.*)$'
+        replace: '\1'
+
+    - name: Correct malformed entry in Docker repository's sources list file
+      replace:
+        path: /etc/apt/sources.list.d/docker.list
+        regexp: '^#(.*[option].*)$'
+        replace: '#\1'
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install NVIDIA Container Toolkit
+      apt:
+        name: nvidia-container-toolkit
+        state: present
+
+    - name: Configure NVIDIA Container Toolkit for Docker runtime
+      shell: |
+        nvidia-ctk runtime configure --runtime=docker
+
+    - name: Restart Docker service
+      service:
+        name: docker
+        state: restarted
+

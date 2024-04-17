@@ -1,0 +1,31 @@
+---
+- name: Provision VMs and perform basic setup
+  hosts: all
+  become: true
+  tasks:
+    - name: Update apt package cache
+      apt:
+        update_cache: yes
+
+    - name: Upgrade all packages
+      apt:
+        upgrade: yes
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Verify Docker installation
+      command: docker --version
+      register: docker_version_output
+      changed_when: false
+      failed_when: docker_version_output.rc != 0
+
+    - name: Display Docker version
+      debug:
+        msg: "{{ docker_version_output.stdout }}"
+
+    - name: Verify provisioning by running a simple command
+      command: echo "VM {{ inventory_hostname }} is provisioned and ready"
+
