@@ -1,16 +1,16 @@
 # proxmox-automation
 
-Automations for Proxmox using Terraform and Ansible. Can be used to setup and provision containers and virtual machines. Read [my post](https://vanmieghem.io/automating-proxmox-with-terraform-ansible/) for more information.
+A cloned repo of https://github.com/vivami/proxmox-automation.git
+Automations for Proxmox using Terraform and Ansible. Can be used to setup and provision containers and virtual machines.
 
 ### Usage
 
 1. Clone the repo and `cd proxmox-automation/tf/ct` (for a container)
 2. Install `ansible` and `terraform` (on a Mac `brew install ansible terraform`)
 3. Configure the variables in `var.tf` and add your public keys to `ansible/files/authorized_keys`. To provision multiple resources, add more hostnames and IP addresses to the defined list in `var.tf`.
-4. `export PM_PASS='your-PVE-password'`
-5. `terraform init` (this should pull in the Terraform Proxmox provider and configure the Terraform project)
-6. `terraform plan -out plan`
-7. `terraform apply`
+4`terraform init` (this should pull in the Terraform Proxmox provider and configure the Terraform project)
+5. `terraform plan -out plan`
+6. `terraform apply`
 
 
 
