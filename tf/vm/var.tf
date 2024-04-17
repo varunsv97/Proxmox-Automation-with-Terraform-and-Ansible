@@ -1,9 +1,9 @@
 variable "proxmox_host" {
 	type = map
        default = {
-       pm_api_url = "https://134.34.206.21:8006/api2/json"
+       pm_api_url = "https://134.34.206.**:8006/api2/json"
        pm_api_token_id = "terraform-prov@pve!terraform-api-token"
-       pm_api_token_secret = "7dad3995-998f-4d1d-bda3-93ece84e8dcd"
+       pm_api_token_secret = "7dad3995***************ece84e8dcd"
      
        target_node = "pve"
      }
