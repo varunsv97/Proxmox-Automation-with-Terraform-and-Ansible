@@ -1,7 +1,10 @@
 # proxmox-automation
 
-A cloned repo of https://github.com/vivami/proxmox-automation.git
+A cloned repo of https://github.com/vivami/proxmox-automation.git.
+
 Automations for Proxmox using Terraform and Ansible. Can be used to setup and provision containers and virtual machines.
+
+This creates VMs with automatically with ubuntu cloud-init template and provisions them with Docker, Nvidia-Container-Toolkit and installs DeepLabCut on Nvidia/CUDA containers 
 
 ### Usage
 
